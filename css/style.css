@@ -1,0 +1,57 @@
+/* Start Variables */
+
+/* End Variables */
+/* Start Global Rules */
+*::before,
+*::after,
+* {
+  box-sizing: border-box;  
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+/* End Global Rules */
+/* Start Header */
+.header {
+    padding: 20px;
+}
+.header .container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .container .logo {
+    width: 60px;
+}
+.header .links {
+   position: relative;
+}
+.icon {
+    --bar-height: 2px;
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.icon:hover span:nth-child(2) {
+    width: 100%;
+}
+.icon span {
+    background-color: #333;
+    margin-bottom: 10px;
+}
+.icon span:first-child {
+    height: var(--bar-height);
+    width: 100%;
+}
+.icon span:nth-child(2) {
+    height: var(--bar-height);
+    width: 50%;
+    transition: 0.3s;
+} 
+.icon span:last-child {
+    height: var(--bar-height);
+    width: 100%;
+}
+/* End Header */
